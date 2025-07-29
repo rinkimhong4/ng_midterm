@@ -1,0 +1,38 @@
+/* pop-product.css */
+.custom-table-container {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.custom-table {
+  width: 100%;
+  max-width: 550px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 8px;
+  text-align: left;
+  word-wrap: break-word;
+  vertical-align: middle;
+}
+
+.custom-table th {
+  font-size: 14px;
+}
+
+.custom-table td {
+  font-size: 13px;
+  height: 60px;
+}
+
+.custom-table .btn {
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.custom-table img {
+  object-fit: cover;
+}

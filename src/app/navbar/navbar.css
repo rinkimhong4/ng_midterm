@@ -1,0 +1,19 @@
+.dropdown-menu {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.dropdown-menu img {
+  border-radius: 5px;
+}
+
+.dropdown-header {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.badge-pill {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}

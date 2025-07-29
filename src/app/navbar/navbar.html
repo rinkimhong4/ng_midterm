@@ -1,0 +1,48 @@
+<!-- navbar.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand font-weight-bold" href="#">Beauty Store</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarMain"
+      aria-controls="navbarMain"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Man</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Woman</a>
+        </li>
+      </ul>
+      <form class="form-inline my-3 my-lg-0 d-flex align-items-center">
+        <input
+          class="form-control mr-2"
+          type="search"
+          placeholder="Search..."
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success mr-2" type="submit">
+          <i class="fas fa-search mr-1"></i> Search
+        </button>
+        <button
+          class="btn btn-outline-success"
+          type="button"
+          (click)="openCart()"
+        >
+          <i class="fas fa-shopping-cart mr-1"></i> Cart
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
