@@ -17,7 +17,6 @@ export class CartService {
     const cart = localStorage.getItem('cart_list') ?? '[]';
     this.cart_list = JSON.parse(cart);
     this.cartSubject.next(this.cart_list);
-    console.log('CartService loaded cart_list:', this.cart_list); // Debug
   }
 
   getCart(): any[] {
@@ -32,7 +31,6 @@ export class CartService {
     this.cart_list.push(item);
     this.saveCart();
     this.cartSubject.next(this.cart_list);
-    console.log('CartService after addToCart:', this.cart_list); // Debug
   }
 
   cancelItem(index: number): void {
@@ -74,11 +72,9 @@ export class CartService {
     this.cart_list = [];
     this.saveCart();
     this.cartSubject.next(this.cart_list);
-    console.log('CartService cleared cart_list:', this.cart_list);
   }
 
   private saveCart(): void {
     localStorage.setItem('cart_list', JSON.stringify(this.cart_list));
-    console.log('CartService saved cart_list:', this.cart_list); // Debug
   }
 }

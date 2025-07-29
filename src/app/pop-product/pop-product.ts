@@ -26,8 +26,6 @@ export class PopProductComponent implements OnInit, OnDestroy {
       .subscribe((cart) => {
         this.cart_list = cart;
         this.calculateTotal();
-        console.log('PopProductComponent cart_list:', this.cart_list);
-        console.log('Total:', this.total); // Debug
       });
     this.breakpoint = window.innerWidth <= 600 ? 1 : 2;
   }
@@ -45,13 +43,11 @@ export class PopProductComponent implements OnInit, OnDestroy {
   cancelItem(index: number): void {
     this.cartService.cancelItem(index);
     this.calculateTotal();
-    console.log('After cancel, cart_list:', this.cart_list);
   }
 
   increaseQty(index: number): void {
     this.cartService.increaseQty(index);
     this.calculateTotal();
-    console.log('After increaseQty, cart_list:', this.cart_list);
   }
 
   decreaseQty(index: number): void {
@@ -73,7 +69,5 @@ export class PopProductComponent implements OnInit, OnDestroy {
     window.alert('Checkout successful! Your order has been placed.');
     this.cartService.clearCart();
     this.calculateTotal();
-    console.log('Checkout completed, cart_list:', this.cart_list);
-    console.log('Total:', this.total);
   }
 }

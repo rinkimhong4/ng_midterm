@@ -25,7 +25,6 @@ export class App {
 
   ngOnInit() {
     this.cart_list = this.cartService.getCart();
-    console.log('App cart_list:', this.cart_list); // Debug
   }
 
   openCart() {
