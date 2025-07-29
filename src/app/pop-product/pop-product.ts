@@ -65,4 +65,15 @@ export class PopProductComponent implements OnInit, OnDestroy {
       0
     );
   }
+  checkout(): void {
+    if (this.cart_list.length === 0) {
+      window.alert('Your cart is empty!');
+      return;
+    }
+    window.alert('Checkout successful! Your order has been placed.');
+    this.cartService.clearCart();
+    this.calculateTotal();
+    console.log('Checkout completed, cart_list:', this.cart_list);
+    console.log('Total:', this.total);
+  }
 }

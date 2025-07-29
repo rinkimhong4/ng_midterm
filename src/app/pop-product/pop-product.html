@@ -47,11 +47,12 @@
       <tr *ngIf="cart_list.length === 0">
         <td colspan="5" class="text-center">No items in cart</td>
       </tr>
-      <div>
-        <h3 class="mt-3 text-end">Total: {{ total | currency : "USD" }}</h3>
+      <div class="d-flex align-items-center mt-3">
+        <h3 class="me-3">Total: {{ total | currency : "USD" }}</h3>
         <button
-          class="btn btn-danger mt-3 float-right"
+          class="btn btn-danger btn-sm"
           style="width: 100px; height: 52px"
+          (click)="checkout()"
         >
           Checkout
         </button>

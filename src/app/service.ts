@@ -70,6 +70,12 @@ export class CartService {
       this.cartSubject.next(this.cart_list);
     }
   }
+  clearCart(): void {
+    this.cart_list = [];
+    this.saveCart();
+    this.cartSubject.next(this.cart_list);
+    console.log('CartService cleared cart_list:', this.cart_list);
+  }
 
   private saveCart(): void {
     localStorage.setItem('cart_list', JSON.stringify(this.cart_list));
