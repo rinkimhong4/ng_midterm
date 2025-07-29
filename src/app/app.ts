@@ -27,6 +27,7 @@ export class App {
     this.cart_list = this.cartService.getCart();
     console.log('App cart_list:', this.cart_list); // Debug
   }
+
   openCart() {
     this.dialog.open(PopProductComponent, {
       width: '600px',
@@ -34,12 +35,6 @@ export class App {
     });
   }
 
-  // addToCart(item: any) {
-  //   this.cartService.addToCart(item);
-  //   this.cart_list = this.cartService.getCart();
-  // }
-
-  // Optional: If App needs to handle cancel or increaseQty
   cancelItem(index: number): void {
     this.cartService.cancelItem(index);
     this.cart_list = this.cartService.getCart();

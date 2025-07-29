@@ -12,13 +12,11 @@
     @for (item of products[0].products; track item.id) {
     <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
       <div class="card product-card h-100 shadow-sm">
-        <!-- Discount Badge -->
         @if (item.discountPercentage > 0) {
         <span class="badge badge-danger discount-badge">
           {{ item.discountPercentage }}% OFF
         </span>
         }
-
         <!-- Product Image -->
         <img
           class="card-img-top p-3"
@@ -27,9 +25,6 @@
           style="height: 200px; object-fit: contain"
         />
         <div class="card-body d-flex flex-column">
-          <!-- Category -->
-          <!-- <span class="badge badge-secondary mb-2">{{ item.category }}</span> -->
-
           <!-- Title -->
           <h5 class="card-title product-title">{{ item.title }}</h5>
 
@@ -37,18 +32,6 @@
           <p class="card-text product-description text-muted small">
             {{ item.description }}
           </p>
-
-          <!-- Rating -->
-          <div class="mb-2">
-            <span class="text-warning">
-              @for (star of [1,2,3,4,5]; track star) {
-              <i
-                class="fas fa-star{{ star > item.rating ? '-half-alt' : '' }}"
-              ></i>
-              }
-            </span>
-            <small class="text-muted ml-1">({{ item.rating }})</small>
-          </div>
 
           <!-- Price -->
           <div class="mt-auto">
@@ -58,7 +41,7 @@
               </div>
               <button
                 class="btn btn-outline-primary btn-sm"
-                (click)="addToCart(item); $event.stopPropagation()"
+                (click)="addToCart(item)"
               >
                 Add to Cart
               </button>
