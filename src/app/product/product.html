@@ -1,0 +1,49 @@
+<div class="container mt-4">
+  <div class="row">
+    @for (item of products[0].products; track item.id) {
+    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <a
+        [routerLink]="['/product-details', item.id]"
+        class="text-decoration-none"
+      >
+        <div class="card product-card h-100 shadow-sm">
+          @if (item.discountPercentage > 0) {
+          <span class="badge badge-danger discount-badge">
+            {{ item.discountPercentage }}% OFF
+          </span>
+          }
+          <img
+            class="card-img-top p-3"
+            [src]="item.thumbnail || item.images[0]"
+            [alt]="item.title"
+            style="height: 200px; object-fit: contain"
+          />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title product-title">{{ item.title }}</h5>
+            <p class="card-text product-description text-muted small">
+              {{ item.description }}
+            </p>
+            <div class="mt-auto">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="h5 text-primary">${{ item.price }}</span>
+                </div>
+                <button
+                  class="btn btn-outline-primary btn-sm"
+                  (click)="
+                    addToCart(item);
+                    $event.stopPropagation();
+                    $event.preventDefault()
+                  "
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    }
+  </div>
+</div>

@@ -1,61 +1,67 @@
-<div class="container p-5">
-  <table class="table custom-table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Price</th>
-        <th scope="col">Quantity</th>
-        <th scope="col">Image</th>
-        <th scope="col">Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of cart_list; let i = index">
-        <th scope="row">{{ i + 1 }}</th>
-        <td>{{ item.title || "N/A" }}</td>
-        <td>{{ item.price || "N/A" }}</td>
-        <td>{{ item.quantity || "1" }}</td>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 d-flex flex-column">
+      <table class="table table-bordered table-striped flex-grow-1">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Image</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (item of cart_list; track item.id; let i = $index) {
+          <tr>
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ item.title || "N/A" }}</td>
+            <td>{{ item.price || "N/A" }}</td>
+            <td>{{ item.quantity | number }}</td>
+            <td>
+              <img
+                [src]="item.thumbnail || (item.images?.[0])"
+                width="50"
+                height="50"
+                alt="Product Image"
+              />
+            </td>
+            <td class="d-flex justify-content-between align-items-center">
+              <button
+                class="btn btn-danger btn-sm p-1 me-2"
+                (click)="cancelItem(i)"
+              >
+                X
+              </button>
+              <button
+                class="btn btn-primary btn-sm p-1 me-2"
+                (click)="increaseQty(i)"
+              >
+                +
+              </button>
+              <button
+                class="btn btn-primary btn-sm p-1"
+                (click)="decreaseQty(i)"
+              >
+                -
+              </button>
+            </td>
+          </tr>
+          } @empty {
+          <tr>
+            <td colspan="6" class="text-center">No items in cart</td>
+          </tr>
+          }
+        </tbody>
+      </table>
 
-        <td>
-          <img
-            [src]="item.thumbnail || item.images[0]"
-            width="50"
-            height="50"
-            alt="Product Image"
-          />
-        </td>
-        <td class="d-flex justify-content-between align-items-center">
-          <button
-            class="btn btn-danger btn-sm p-1 me-2"
-            (click)="cancelItem(i)"
-          >
-            X
-          </button>
-          <button
-            class="btn btn-primary btn-sm p-1 me-2"
-            (click)="increaseQty(i)"
-          >
-            +
-          </button>
-          <button class="btn btn-primary btn-sm p-1" (click)="decreaseQty(i)">
-            -
-          </button>
-        </td>
-      </tr>
-      <tr *ngIf="cart_list.length === 0">
-        <td colspan="5" class="text-center">No items in cart</td>
-      </tr>
-      <div class="d-flex align-items-center mt-3">
+      <div class="d-flex justify-content-between">
         <h3 class="me-3">Total: {{ total | currency : "USD" }}</h3>
-        <button
-          class="btn btn-danger btn-sm"
-          style="width: 100px; height: 52px"
-          (click)="checkout()"
-        >
+        <button class="btn btn-danger btn-lg" (click)="checkout()">
           Checkout
         </button>
       </div>
-    </tbody>
-  </table>
+    </div>
+  </div>
 </div>

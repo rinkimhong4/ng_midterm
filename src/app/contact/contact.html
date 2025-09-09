@@ -1,0 +1,59 @@
+<!-- Contact -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h2 class="h4">Contact Us</h2>
+        <p class="text-muted">
+          Have questions or want to work together? Send us a message — we
+          usually reply within 48 hours.
+        </p>
+
+        <form id="contactForm" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required />
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+            <div class="invalid-feedback">Please enter a valid email.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              required
+            ></textarea>
+            <div class="invalid-feedback">
+              A short message helps us respond better.
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="h6">Other ways to reach us</h2>
+        <ul class="list-unstyled small">
+          <li><strong>Email:</strong> hello@mysite.example</li>
+          <li><strong>Phone:</strong> +855 12 345 678</li>
+          <li><strong>Address:</strong> Phnom Penh, Cambodia</li>
+        </ul>
+
+        <div class="mt-4">
+          <!-- Simple embedded map placeholder (replace with real embed if desired) -->
+          <div
+            class="ratio ratio-16x9 bg-light rounded-3 d-flex align-items-center justify-content-center border"
+          >
+            <span class="small text-muted"
+              >Map placeholder — replace with Google Maps embed.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
