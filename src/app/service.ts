@@ -33,7 +33,6 @@ export class CartService {
     if (existingItem) {
       existingItem.quantity += 1;
     } else {
-      // Add new item with default quantity 1
       this.cart_list.push({ ...item, quantity: 1 });
     }
 
