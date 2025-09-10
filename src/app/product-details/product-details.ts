@@ -1,4 +1,3 @@
-// product-details.ts
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -18,9 +17,9 @@ export class ProductDetails implements OnInit {
   ) {}
 
   ngOnInit() {
-    let id = Number(this.route.snapshot.paramMap.get('id'));
+    let idRoute = Number(this.route.snapshot.paramMap.get('id'));
     let allProducts = this.products[0].products;
-    this.product = allProducts.find((p: any) => p.id === id);
+    this.product = allProducts.find((p: any) => p.id == idRoute);
   }
 
   addToCart(item: any) {

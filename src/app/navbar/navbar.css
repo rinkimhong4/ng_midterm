@@ -17,3 +17,7 @@
   top: -5px;
   right: -10px;
 }
+.nav-link.active {
+  color: #28a745 !important; /* Green color for active link, matching btn-outline-success */
+  font-weight: bold; /* Optional: make the active link bold */
+}

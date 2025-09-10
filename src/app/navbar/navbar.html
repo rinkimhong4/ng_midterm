@@ -1,30 +1,23 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
+<br /><br />
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-white">
+  <div class="container fixed-top bg-white">
     <a class="navbar-brand font-weight-bold" routerLink="">Beauty Store</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarMain"
-      aria-controls="navbarMain"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler" type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarMain">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link active" routerLink="">Home</a>
+          <a class="nav-link" routerLink="">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" routerLink="product">Product</a>
+          <a class="nav-link" routerLink="product">Product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" routerLink="contact">Contact</a>
+          <a class="nav-link" routerLink="contact">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" routerLink="about">About</a>
+          <a class="nav-link" routerLink="about">About</a>
         </li>
       </ul>
       <form class="form-inline my-3 my-lg-0 d-flex align-items-center">
@@ -40,13 +33,6 @@
         <a routerLink="cart" class="btn btn-outline-success" type="button"
           >Cart</a
         >
-        <!-- <button
-          class="btn btn-outline-success"
-          type="button"
-          (click)="openCart()"
-        >
-          <i class="fas fa-shopping-cart mr-1"></i>
-        </button> -->
       </form>
     </div>
   </div>

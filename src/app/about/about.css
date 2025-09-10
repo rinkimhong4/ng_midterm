@@ -1,0 +1,7 @@
+.team-avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
