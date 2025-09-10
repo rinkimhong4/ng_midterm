@@ -28,7 +28,15 @@ export class CartService {
   }
 
   addToCart(item: any): void {
-    this.cart_list.push(item);
+    const existingItem = this.cart_list.find((p) => p.id === item.id);
+
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      // Add new item with default quantity 1
+      this.cart_list.push({ ...item, quantity: 1 });
+    }
+
     this.saveCart();
     this.cartSubject.next(this.cart_list);
   }
@@ -51,14 +59,17 @@ export class CartService {
   }
 
   decreaseQty(index: number): void {
-    if (index >= 0 && index < this.cart_list.length) {
-      const currentQty = this.cart_list[index].quantity || 1;
-      if (currentQty > 1) {
-        this.cart_list[index].quantity = currentQty - 1;
-        this.saveCart();
-        this.cartSubject.next(this.cart_list);
-      }
+    const item = this.cart_list[index];
+    if (!item) return;
+
+    item.quantity -= 1;
+
+    if (item.quantity <= 0) {
+      this.cart_list.splice(index, 1); // remove item from cart
     }
+
+    this.saveCart();
+    this.cartSubject.next(this.cart_list);
   }
 
   setQty(index: number, qty: number): void {

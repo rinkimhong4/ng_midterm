@@ -14,8 +14,8 @@ import { CartService } from '../service';
 })
 export class PopProductComponent implements OnInit, OnDestroy {
   cart_list: any[] = [];
-  total: number = 0;
-  breakpoint: number = 2;
+  total: number = 1;
+  breakpoint: number = 1;
   private cartSubscription!: Subscription;
 
   constructor(private cartService: CartService) {}
@@ -61,6 +61,7 @@ export class PopProductComponent implements OnInit, OnDestroy {
       0
     );
   }
+
   checkout(): void {
     if (this.cart_list.length === 0) {
       window.alert('Your cart is empty!');
