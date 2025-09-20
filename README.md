@@ -1,59 +1,84 @@
-# NgFinal
+l# Hi there 👋 I'm Kimhong — MIS Student & Aspiring Systems Builder
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+![header](./header.svg)
 
-## Development server
+> 🎒 MIS student | 📚 Learning C#, Java, Databases | 💻 Building useful apps with friendly UI  
+> This README is playful and cartoon-styled — perfect for a student portfolio and project hub.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 🔖 Quick links
+[![Portfolio](https://img.shields.io/badge/Portfolio-Website-blue?style=for-the-badge)](#)
+[![Projects](https://img.shields.io/badge/Projects-See_below-green?style=for-the-badge)](#projects)
+[![Contact](https://img.shields.io/badge/Contact-Email-orange?style=for-the-badge)](#contact)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🧭 About Me
+I'm an MIS (Management Information Systems) student who loves building practical software — from desktop apps to web tools. I enjoy clean UIs, simple UX, and turning requirements into working projects. I’m learning across the stack: databases, C#, Java, JavaScript, and more.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- 🏫 Current: Year 2 MIS student  
+- ⏰ Study hours: 1 PM — 5 PM (school)  
+- 🎯 Goals: Internship in Year 3, build portfolio projects, learn best practices
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Skills & Tools
+- **Languages:** C#, Java, JavaScript, SQL (MySQL)
+- **Frameworks / Tech:** .NET WinForms / ASP.NET, Flutter (learning), Angular basics
+- **DB / Storage:** MySQL, localStorage (for prototypes), Supabase (experimenting)
+- **Tools:** Git, VS Code, Visual Studio, Postman
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 🚀 Projects (samples)
+### 1. Library Management System (C# WinForms)
+- Features: Book search, borrowing, reservation, unique item IDs, due dates, fines.
+- Notes: Digital-only prototype, no physical stock tracking.
 
-To build the project run:
+### 2. Shop Management System (HTML/CSS/JS + Bootstrap)
+- Features: Product entry, modals for edit, table listing, toast notifications.
+- Notes: Uses `localStorage` for persistence (no DB required).
 
-```bash
-ng build
-```
+### 3. E-Library Web App
+- Features: Admin/member modules, digital book listing, issue/return, payment stub.
+- Notes: Designed for future migration to a cloud DB.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+(Replace these with your real projects and links!)
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📊 Learning Progress (cartoon progress bars)
+![Progress - Databases](https://img.shields.io/badge/Databases-70%25-yellow?style=flat-square)
+![Progress - C#](https://img.shields.io/badge/C%23-65%25-blue?style=flat-square)
+![Progress - Java](https://img.shields.io/badge/Java-40%25-red?style=flat-square)
+![Progress - Flutter](https://img.shields.io/badge/Flutter-20%25-lightgrey?style=flat-square)
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## 🧾 Resume / How to use this README
+1. Edit the top name/intro to match yours.
+2. Replace the Projects section with links to real repos (use relative links).
+3. Save the provided `header.svg` file beside `README.md`.
+4. Add animated gifs or screenshots into `assets/` and reference them with `![screenshot](./assets/shot.gif)`.
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## ✉️ Contact
+- Email: `your-email@example.com`  
+- LinkedIn: `https://linkedin.com/in/yourprofile`  
+- GitHub: `https://github.com/your-username`
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## ✨ Pro Tips (style & animation ideas)
+- Use `header.svg` (provided) — it’s a tiny animated cartoon that works well in profile READMEs.
+- Add animated GIFs of app flows (record with OBS or screen-to-gif).
+- Use shields.io badges for dynamic status (build passing, school projects, languages).
+- For advanced animated headers, create an SVG and reference it: `![header](./header.svg)` — GitHub renders SVG animations.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## 🧩 License
+This README template is free to use and adapt — share it and remix! 😄
+
