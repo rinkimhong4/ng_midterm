@@ -1,9 +1,7 @@
 <div align="center">
 
-  <!-- Profile Photo with Glow -->
-  <img src="assets/images/profile.jpg"
-       alt="Profile Photo"
-       style="border-radius: 50%; width: 170px; height: 170px; border: 4px solid #512BD4; box-shadow: 0 0 20px #512BD4, 0 0 40px rgba(81,43,212,0.6);" />
+  <!-- Fun Coding Animal GIF -->
+  <img src="https://media.giphy.com/media/836HiJc7pgzy8iNXCn/giphy.gif" width="300" />
 
   <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold; color:#222;">
     👋 Hi, I'm <span style="color:#512BD4;">Rin Kimhong</span>
@@ -11,18 +9,15 @@
   <h3 style="color:#555;">🎓 3rd Year MIS Student at <strong>SETEC Institute</strong></h3>
   <h4 style="color:#444;">💡 Aspiring <span style="color:#02569B;">Full Stack Mobile App Developer</span></h4>
 
-  <!--Google Foobar -->
- <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
- <!-- Achievement Corner -->
-    <!-- Cartoon Characters -->
-    <div style="position: absolute; top: -70px; left: 50%; transform: translateX(-50%); display: flex; gap: 25px;">
-      <img src="assets/images/cartoon1.gif" width="95" />
-      <img src="assets/images/cartoon2.gif" width="95" />
-      <img src="assets/images/cartoon3.gif" width="95" />
-    </div>
-  </div>
+  <!-- Banner -->
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" />
 
-  
+  <!-- Cartoon Characters Row -->
+  <div style="display: flex; justify-content: center; gap: 25px; margin-top: 15px;">
+    <img src="https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif" width="95" title="Coding Cat" />
+    <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" width="95" title="Working Dog" />
+    <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif" width="95" title="Cool Owl" />
+  </div>
 
 </div>
 
@@ -30,11 +25,15 @@
 
 ## 🧑‍💻 About Me
 I’m a **3rd Year MIS Student** passionate about designing and coding **modern apps and systems**.  
-I love combining **UI/UX design** with **practical features** to create **impactful software**.  
+I love combining **UI/UX design** with **practical features** to create impactful software.  
 
 - 🏫 Studying at **SETEC Institute**  
 - 📌 Interest: **Mobile Apps, Web Development, Databases, UI/UX**  
 - 🌟 Goal: **Full Stack Mobile Developer (Flutter + Supabase)**  
+
+<div align="center">
+  <img src="https://media.giphy.com/media/3o7btPCcdN6Yk4tW4g/giphy.gif" width="250" style="border-radius: 12px;" />
+</div>
 
 ---
 
@@ -79,9 +78,19 @@ I love combining **UI/UX design** with **practical features** to create **impact
 </div>
 
 ---
-
 ## 📂 Featured Projects
-*(Your 4 projects stay the same here — Medical App, Recipe App, Shopping App, FitBody App)*  
+
+- 📘 **[Medical App](https://github.com/rinkimhong4/Medical-App-UI-Kit-Health-)**  
+  *Flutter + Supabase healthcare app with authentication, doctor profiles, and specialties.*
+
+- 👕 **[Recipe App](https://github.com/rinkimhong4/Recipes_APP)**  
+  *Flutter recipe app with authentication, notifications, and offline storage.*
+
+- 🛒 **[Shopping App](https://github.com/rinkimhong4/shopping_app)**  
+  *E-commerce web app using HTML, Bootstrap, JS with product management and cart.*
+
+- 💪 **[FitBody App](https://github.com/rinkimhong4/fitbody_app_ui_only)**  
+  *Flutter fitness app with workouts, progress tracking, and community features.*
 
 ---
 
@@ -90,7 +99,6 @@ I love combining **UI/UX design** with **practical features** to create **impact
   <img src="https://img.shields.io/badge/Flutter-60%25-02569B?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Supabase-45%25-3ECF8E?style=for-the-badge" />
   <img src="https://img.shields.io/badge/C%23-50%25-512BD4?style=for-the-badge" />
-  
   <img src="https://img.shields.io/badge/Databases-40%25-28A745?style=for-the-badge" />
 </div>
 
@@ -109,9 +117,7 @@ I love combining **UI/UX design** with **practical features** to create **impact
 ## 🏆 Achievement Corner
 <div align="center">
 
-<!-- Google Foobar -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="350" />
-
 <p>🎖️ Cracked <strong>Google Foobar Challenge</strong> — proving problem-solving skills!</p>
 </div>
 
@@ -119,4 +125,5 @@ I love combining **UI/UX design** with **practical features** to create **impact
 
 <div align="center">
   <p><strong>✨ Thanks for visiting my profile! Let’s build something awesome 🚀</strong></p>
+  <img src="https://media.giphy.com/media/3o6Yg5f0zYA2R1B3yM/giphy.gif" width="180" />
 </div>
